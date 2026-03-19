@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MM · simple portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="container header-flex">
+      <span class="logo"> mm.dev</span>
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <p class="hero-greeting">hi there, i'm</p>
+        <h1 class="hero-name">MM</h1>
+        <p class="hero-tagline">building clean web experiences & simple tools</p>
+        <a href="#projects" class="btn">see work ↓</a>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2>about me</h2>
+        <div class="about-content">
+          <p>I'm a web developer who enjoys turning ideas into minimal, responsive layouts. When I'm not coding, you'll find me drinking coffee or reading sci‑fi.</p>
+          <p><span class="highlight">core tools:</span> HTML, CSS, JavaScript, and a bit of React. Always learning.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>projects i've think of</h2>
+        <div class="project-grid">
+          <article class="card">
+            <div class="card-img placeholder"></div>
+            <h3>local weather cast</h3>
+            <p>Simple weather.</p>
+            <span class="card-tag">JavaScript</span>
+          </article>
+          <article class="card">
+            <div class="card-img placeholder"></div>
+            <h3>task flow</h3>
+            <p>Drag‑drop task manager built with vanilla JS.</p>
+            <span class="card-tag">HTML/CSS/JS</span>
+          </article>
+          <article class="card">
+            <div class="card-img placeholder"></div>
+            <h3>minimalist gallery</h3>
+            <p>Responsive image grid with lightbox effect – focus on CSS grid and smooth transitions.</p>
+            <span class="card-tag">CSS</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>let's connect</h2>
+        <p>feel free to reach out for collaborations or just a friendly Haluu.</p>
+        <ul class="contact-list">
+          <li><a href="mailto:mo.mahmoud@rimtech.dev">mo.mahmoud@rimtech.dev</a></li>
+          <li><a href="#">linkedin</a></li>
+          <li><a href="#">github</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <p>© <span id="current-year"></span> MM · all good</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
