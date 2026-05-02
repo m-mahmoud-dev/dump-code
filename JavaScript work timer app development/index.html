@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work Timer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>Work Timer</h1>
+      <p class="subtitle">Track focused work sessions with accurate timing.</p>
+    </header>
+
+    <main class="card">
+      <section class="timer-section">
+        <div class="mode-row">
+          <label for="modeSelect">Mode</label>
+          <select id="modeSelect">
+            <option value="normal">Normal Timer</option>
+            <option value="pomodoro">Pomodoro</option>
+          </select>
+        </div>
+
+        <div class="label-row">
+          <label for="sessionLabel">Session Label</label>
+          <input
+            id="sessionLabel"
+            type="text"
+            placeholder="e.g. coding, study"
+            maxlength="40"
+          />
+        </div>
+
+        <div class="timer-display" id="timerDisplay">00:00:00</div>
+
+        <div class="status" id="statusText">Ready</div>
+
+        <div class="controls">
+          <button id="startBtn" class="btn btn-primary">Start</button>
+          <button id="pauseBtn" class="btn btn-secondary">Pause</button>
+          <button id="resetBtn" class="btn btn-danger">Reset</button>
+        </div>
+
+        <div class="pomodoro-info" id="pomodoroInfo">
+          <span>Phase: <strong id="phaseText">Work</strong></span>
+          <span>Cycle target: <strong id="phaseTargetText">25:00</strong></span>
+        </div>
+      </section>
+
+      <section class="summary-section">
+        <h2>Today Summary</h2>
+        <div class="summary-box">
+          <span>Total worked today</span>
+          <strong id="todayTotal">00:00:00</strong>
+        </div>
+      </section>
+
+      <section class="history-section">
+        <div class="history-header">
+          <h2>Session History</h2>
+          <button id="clearHistoryBtn" class="btn btn-small">Clear History</button>
+        </div>
+        <ul id="sessionList" class="session-list"></ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
