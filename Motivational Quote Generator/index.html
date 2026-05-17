@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational Quote Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+
+    <div class="favorites-panel" id="favoritesPanel">
+        <div class="fav-header">
+            <h3>Your Favorites</h3>
+            <button class="fav-close" id="favCloseBtn">&times;</button>
+        </div>
+        <div id="favList"></div>
+    </div>
+
+    <!-- Main container -->
+    <div class="container">
+        <div class="card" id="quoteCard">
+            <span class="quote-icon" id="quoteIcon"></span>
+            <div>
+                <span class="category-badge badge-success" id="categoryBadge">SUCCESS</span>
+            </div>
+            <p class="quote-text" id="quoteText">
+                "The only way to do great work is to love what you do."
+            </p>
+            <p class="quote-author" id="quoteAuthor">
+                <span class="author-dash">—</span> Steve Jobs
+            </p>
+            <div class="btn-row">
+                <button class="btn btn-primary" id="generateBtn"> 
+                  Generate Quote
+                </button>
+                <button class="btn btn-outline btn-sm" id="copyBtn" title="Copy to clipboard">
+                     Copy
+                </button>
+                <button class="btn btn-outline btn-sm" id="tweetBtn" title="Share on Twitter / X">
+                     Tweet
+                </button>
+            </div>
+        </div>
+
+        <div class="filter-section" id="filterSection">
+            <span class="filter-pill active" data-category="all">All</span>
+            <span class="filter-pill" data-category="success">Success</span>
+            <span class="filter-pill" data-category="perseverance">Perseverance</span>
+            <span class="filter-pill" data-category="mindset">Mindset</span>
+            <span class="filter-pill" data-category="courage">Courage</span>
+            <span class="filter-pill" data-category="wisdom">Wisdom</span>
+            <span class="filter-pill" data-category="discipline">Discipline</span>
+            <span class="filter-pill" data-category="leadership">Leadership</span>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">
+        <span class="toast-icon"></span> <span id="toastMsg">Copied!</span>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
