@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Color Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Random Color Generator</h1>
+      <button id="theme-toggle" class="btn-icon" aria-label="Toggle dark/light mode">🌙</button>
+    </header>
+
+    <main>
+      <div class="color-preview" id="color-preview"></div>
+      <div class="color-info" id="solid-info">
+        <div class="info-row">
+          <span class="label">HEX</span>
+          <span class="value" id="hex-value">#3498db</span>
+        </div>
+        <div class="info-row">
+          <span class="label">RGB</span>
+          <span class="value" id="rgb-value">rgb(52, 152, 219)</span>
+        </div>
+      </div>
+      <div class="color-info" id="gradient-info" style="display: none;">
+        <p class="gradient-css" id="gradient-css">linear-gradient(135deg, #ff7e5f, #feb47b)</p>
+      </div>
+
+      <div class="button-group">
+        <button id="generate-solid" class="btn">Random Color</button>
+        <button id="generate-gradient" class="btn btn-outline">Random Gradient</button>
+        <button id="copy-btn" class="btn btn-copy">Copy HEX</button>
+      </div>
+
+      <div class="recent-section">
+        <h3>Recent Colors</h3>
+        <div id="recent-colors" class="recent-colors"></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
